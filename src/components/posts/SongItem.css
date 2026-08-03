@@ -1,0 +1,39 @@
+:root {
+  --item-shadow: 1px;
+  --item-side-margin: var(--item-shadow);
+}
+
+.song-item {
+  display: flex;
+  flex-direction: row;
+  margin: 0px var(--item-side-margin) 3px var(--item-side-margin);
+  padding: 10px;
+  border: 1px solid var(--purple);
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px var(--item-shadow) var(--purple);
+}
+
+.song-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.song-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.song-info h3 {
+  font-family: var(--font-family);
+  font-size: 15px;
+  color: var(--white);
+}
+
+.song-info p {
+  font-family: var(--font-family);
+  font-size: 13px;
+  color: var(--grey);
+}

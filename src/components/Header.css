@@ -1,0 +1,44 @@
+.app-header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  justify-content: space-between;
+  width: 100%;
+  box-shadow: 10px 0px 20px 8px var(--purple);
+}
+
+.header-branding {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.header-logo {
+  width: 40px;
+  height: 40px;
+}
+
+.header-title {
+  font-family: var(--font-family);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.header-search {
+  display: flex;
+  min-width: var(--main-width);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.header-profile-button {
+  background: transparent;
+  border: 1px solid #ccc;
+  border-radius: 999px;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+}

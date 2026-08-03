@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { IconArrowsSort } from "@tabler/icons-react";
+import "./App.css";
+import { Header } from "./components/Header";
+import { SongsList } from "./components/posts/SongsList";
+import songsData from "./metadata/songs.json";
+import { SpecialButton } from "./UI/button/SpecialButton";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <main>
+        <div className="filters">
+          <SpecialButton
+            className="sort-button"
+            icon={<IconArrowsSort stroke={2} className="sort-icon" />}
+          >
+            Sort
+          </SpecialButton>
+        </div>
+
+        <SongsList className="songs-list" songs={songsData.songs} />
+      </main>
     </div>
   );
 }

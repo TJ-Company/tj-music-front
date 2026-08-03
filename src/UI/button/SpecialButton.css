@@ -1,0 +1,45 @@
+.sort-button {
+  display: flex;
+  align-items: center;
+  background-color: var(--purple);
+  color: var(--white);
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 15px;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.sort-icon {
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+}
+
+.sort-button:hover {
+  background-color: var(--hover-purple);
+}
+
+.sort-button:active {
+  background-color: var(--active-purple);
+}
+
+.profile-button {
+  display: flex;
+  align-items: center;
+  background-color: var(--purple);
+  color: var(--white);
+  cursor: pointer;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 10px;
+}
+
+.profile-button:hover {
+  background-color: var(--hover-purple);
+}
+
+.profile-button:active {
+  background-color: var(--active-purple);
+}
