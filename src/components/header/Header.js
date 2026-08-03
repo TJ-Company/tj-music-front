@@ -1,7 +1,7 @@
 import { IconUser } from "@tabler/icons-react";
-import logo from "../logo.svg";
-import { SpecialButton } from "../UI/button/SpecialButton";
-import { SearchBar } from "../UI/search.bar/SearchBar";
+import { SpecialButton } from "../../UI/button/SpecialButton";
+import { SearchBar } from "../../UI/search.bar/SearchBar";
+import logo from "../../logo.svg";
 import "./Header.css";
 
 export const Header = () => {

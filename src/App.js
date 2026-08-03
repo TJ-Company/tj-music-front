@@ -1,6 +1,6 @@
 import { IconArrowsSort } from "@tabler/icons-react";
 import "./App.css";
-import { Header } from "./components/Header";
+import { Header } from "./components/header/Header";
 import { SongsList } from "./components/posts/SongsList";
 import songsData from "./metadata/songs.json";
 import { SpecialButton } from "./UI/button/SpecialButton";
