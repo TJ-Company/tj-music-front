@@ -1,59 +1,73 @@
 {
-  "songs": [
+  "tracks": [
     {
+      "id": 1,
       "title": "Everybody",
       "author": "Tim Mahendran, Oliver Tompsett, David Bedella",
       "cover": "../covers/everybody.jpg"
     },
     {
+      "id": 2,
       "title": "Symmetry",
       "author": "Ed Sheeran",
       "cover": "../covers/symmetry.png"
     },
-    {
+    { 
+      "id": 3,
       "title": "Freakout",
       "author": "Babel",
       "cover": "../covers/freakout.jpg"
     },
     {
+      "id": 4,
       "title": "Zombie",
       "author": "The Cranberries",
       "cover": "../covers/zombie.png"
-    },{
+    },
+    {
+      "id": 5,
       "title": "Everybody",
       "author": "Tim Mahendran, Oliver Tompsett, David Bedella",
       "cover": "../covers/everybody.jpg"
     },
     {
+      "id": 6,
       "title": "Symmetry",
       "author": "Ed Sheeran",
       "cover": "../covers/symmetry.png"
     },
     {
+      "id": 7,
       "title": "Freakout",
       "author": "Babel",
       "cover": "../covers/freakout.jpg"
     },
     {
+      "id": 8,
       "title": "Zombie",
       "author": "The Cranberries",
       "cover": "../covers/zombie.png"
-    },{
+    },
+    {
+      "id": 9,
       "title": "Everybody",
       "author": "Tim Mahendran, Oliver Tompsett, David Bedella",
       "cover": "../covers/everybody.jpg"
     },
     {
+      "id": 10,
       "title": "Symmetry",
       "author": "Ed Sheeran",
       "cover": "../covers/symmetry.png"
     },
     {
+      "id": 11,
       "title": "Freakout",
       "author": "Babel",
       "cover": "../covers/freakout.jpg"
     },
     {
+      "id": 12,
       "title": "Zombie",
       "author": "The Cranberries",
       "cover": "../covers/zombie.png"

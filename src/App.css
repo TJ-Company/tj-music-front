@@ -12,6 +12,7 @@
   --item-side-margin: var(--item-shadow);
   --purple: #4c00ff;
   --white: #d8d8d8;
+  --black: #111111;
   --hover-purple: #4c00ffd4;
   --active-purple: #4c00ffb3;
   --grey: #6e6e6e;
@@ -20,11 +21,10 @@
 .App {
   display: flex;
   align-items: center;
-  background-color: #111111;
+  background-color: var(--black);
   display: flex;
   min-height: 100vh;
   font-size: calc(10px + 2vmin);
-  color: white;
   flex-direction: column;
 }
 
@@ -32,7 +32,7 @@ main {
   /* background-color: #ffffff; */
   width: var(--main-width);
   min-height: 100vh;
-  margin-top: 60px;
+  margin-top: 140px;
 }
 
 main .filters {

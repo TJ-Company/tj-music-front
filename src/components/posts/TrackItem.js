@@ -2,30 +2,22 @@ import {
   IconPlayerPauseFilled,
   IconPlayerPlayFilled,
 } from "@tabler/icons-react";
-import { useState } from "react";
-import "../posts/SongItem.css";
+import "../posts/TrackItem.css";
 
-export const SongItem = (props) => {
-  const { song } = props;
-  const { title, author, cover } = song || {};
+export const TrackItem = (props) => {
+  const { track, handleTrackClick, currentSong, isPlaying } = props;
+  const { id, title, author, cover } = track || {};
   const normalizedCover = cover?.replace(/\\/g, "/");
-  const [isPlaying, setPlay] = useState(false);
-
-  const handleClick = () => {
-    setPlay(!isPlaying);
-    console.log(`Clicked on ${title} by ${author}`);
-    console.log(`Music is ${isPlaying ? "paused" : "playing"}`);
-  };
 
   return (
     <div className="song-item">
       <button
         className="song-image-button"
-        onClick={handleClick}
+        onClick={() => handleTrackClick(track)}
         alt={title}
         style={{ backgroundImage: `url(${normalizedCover})` }}
       >
-        {isPlaying ? (
+        {currentSong && currentSong?.id === track.id && isPlaying ? (
           <IconPlayerPauseFilled className="song-pause-icon" />
         ) : (
           <IconPlayerPlayFilled className="song-play-icon" />
