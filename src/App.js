@@ -5,27 +5,20 @@ import { Footer } from "./components/footer/Footer";
 import { Header } from "./components/header/Header";
 import { TracksList } from "./components/posts/TracksList";
 import songsData from "./metadata/tracks.json";
-import { SpecialButton } from "./UI/button/SpecialButton";
+import { SpecialButton } from "./UI/buttons/SpecialButton/SpecialButton";
 
 function App() {
-  const [currentSong, setCurrentSong] = useState(null);
+  const [currentTrack, setCurrentSong] = useState(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
   const handleTrackClick = (song) => {
-    if (currentSong) {
-      if (currentSong.id === song.id) {
-        setIsPlaying(!isPlaying);
-      } else {
-        setCurrentSong(song);
-        setIsPlaying(true);
-      }
+    if (currentTrack?.id === song.id) {
+      setIsPlaying((prev) => !prev);
     } else {
-      setIsPlaying(true);
       setCurrentSong(song);
+      setIsPlaying(true);
     }
-
-    console.log(`Track ${isPlaying ? "playing" : "paused"}`);
-    console.log(`Clicked on ${song.title} by ${song.author}`);
+    console.log(`Clicked ${song.title}`);
   };
 
   return (
@@ -45,11 +38,15 @@ function App() {
           className="songs-list"
           tracks={songsData.tracks}
           handleTrackClick={handleTrackClick}
-          currentSong={currentSong}
+          currentSong={currentTrack}
           isPlaying={isPlaying}
         />
       </main>
-      <Footer song={currentSong} />
+      <Footer
+        track={currentTrack}
+        handleTrackClick={handleTrackClick}
+        isPlaying={isPlaying}
+      />
     </div>
   );
 }

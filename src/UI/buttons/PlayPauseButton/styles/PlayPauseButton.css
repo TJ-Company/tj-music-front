@@ -1,0 +1,15 @@
+.player-play-icon,
+.player-pause-icon {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  width: 50px;
+  height: 50px;
+  color: var(--purple);
+}
+
+.play-pause-button {
+  background-color: var(--black);
+  cursor: pointer;
+  border: none;
+}

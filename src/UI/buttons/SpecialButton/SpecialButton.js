@@ -1,4 +1,5 @@
-import "./SpecialButton.css";
+import "./styles/ProfileButton.css";
+import "./styles/SortButton.css";
 
 export const SpecialButton = ({ children, ...props }) => {
   const { className, icon } = props;

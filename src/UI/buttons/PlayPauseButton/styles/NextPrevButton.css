@@ -1,0 +1,8 @@
+.next-prev-button {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  width: 30px;
+  height: 30px;
+  color: var(--purple);
+}

@@ -24,22 +24,3 @@
 .sort-button:active {
   background-color: var(--active-purple);
 }
-
-.profile-button {
-  display: flex;
-  align-items: center;
-  background-color: var(--purple);
-  color: var(--white);
-  cursor: pointer;
-  border: none;
-  border-radius: 25px;
-  padding: 10px 10px;
-}
-
-.profile-button:hover {
-  background-color: var(--hover-purple);
-}
-
-.profile-button:active {
-  background-color: var(--active-purple);
-}

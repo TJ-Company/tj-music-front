@@ -1,5 +1,5 @@
 import { IconUser } from "@tabler/icons-react";
-import { SpecialButton } from "../../UI/button/SpecialButton";
+import { SpecialButton } from "../../UI/buttons/SpecialButton/SpecialButton";
 import { SearchBar } from "../../UI/search.bar/SearchBar";
 import logo from "../../logo.svg";
 import "./Header.css";
