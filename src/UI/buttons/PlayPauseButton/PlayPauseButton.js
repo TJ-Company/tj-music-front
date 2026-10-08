@@ -1,5 +1,5 @@
 export const PlayPauseButton = (props) => {
-  const { className, onClick, alt, style, icon } = props;
+  const { children, className, onClick, alt, style, icon } = props;
   return (
     <button
       className={className}
@@ -9,6 +9,7 @@ export const PlayPauseButton = (props) => {
       aria-label={alt}
     >
       {icon}
+      {children}
     </button>
   );
 };

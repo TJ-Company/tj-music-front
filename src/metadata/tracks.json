@@ -8,6 +8,23 @@
     },
     {
       "id": 2,
+      "userId": {
+        "id": 1,
+        "username": "Chokopie2",
+        "email": "chokopie2email@gmail.com",
+        "passwordHash": "abc",
+        "role": "AUTHOR",
+        "createdAt": "2026-04-14T00:00:00"
+      },
+      "title": "Creeper",
+      "duration": 400,
+      "createdAt": "2026-04-18T00:00:00",
+      "coverUrl": "../covers/everybody.jpg",
+      "audioUrl": "../covers/everybody.jpg"
+
+    },
+    {
+      "id": 2,
       "title": "Symmetry",
       "author": "Ed Sheeran",
       "cover": "../covers/symmetry.png"

@@ -3,19 +3,26 @@ import { SpecialButton } from "../../UI/buttons/SpecialButton/SpecialButton";
 import { SearchBar } from "../../UI/search.bar/SearchBar";
 import logo from "../../logo.svg";
 import "./Header.css";
+import { useNavigate, Link } from "react-router-dom";
 
 export const Header = () => {
+  const navigate = useNavigate();
   return (
     <header className="app-header">
-      <div className="header-branding">
+      <button onClick={() => navigate("/")} className="header-branding-button">
         <img src={logo} alt="TJ Music logo" className="header-logo" />
         <span className="header-title">TJ Music</span>
-      </div>
+      </button>
       <div className="header-search">
         <SearchBar />
       </div>
       <div className="header-actions">
-        <SpecialButton className="sort-button">All tracks</SpecialButton>
+        <SpecialButton
+          className="sort-button"
+          onClick={() => navigate("/all-tracks")}
+        >
+          All tracks
+        </SpecialButton>
         <SpecialButton
           className="profile-button"
           icon={<IconUser stroke={2} />}

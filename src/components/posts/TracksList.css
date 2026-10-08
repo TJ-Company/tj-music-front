@@ -1,3 +1,4 @@
 .songs-list {
   padding-top: var(--song-item-side-margin);
+  width: 100%;
 }

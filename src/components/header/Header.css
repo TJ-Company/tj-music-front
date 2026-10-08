@@ -9,10 +9,14 @@
   background-color: #111111;
 }
 
-.header-branding {
+.header-branding-button {
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  background-color: var(--black);
+  color: var(--white);
+  cursor: pointer;
+  border: none;
 }
 
 .header-logo {
