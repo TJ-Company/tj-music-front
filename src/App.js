@@ -1,21 +1,11 @@
-import { AllTracksPage } from "./pages/AllTracks";
-import { MainPage } from "./pages/MainPage";
-import {
-  BrowserRouter as BrouserRouter,
-  Route,
-  Routes,
-} from "react-router-dom";
-import { Header } from "./components/header/Header";
+import { BrowserRouter } from "react-router-dom";
+import { AppContent } from "./AppContent";
 
 function App() {
   return (
-    <BrouserRouter>
-      <Header />
-      <Routes>
-        <Route path="/" element={<MainPage />} />
-        <Route path="/all-tracks" element={<AllTracksPage />} />
-      </Routes>
-    </BrouserRouter>
+    <BrowserRouter>
+      <AppContent />
+    </BrowserRouter>
   );
 }
 

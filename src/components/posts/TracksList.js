@@ -7,8 +7,8 @@ export const TracksList = (props) => {
       <TrackItem
         key={index}
         track={track}
-        handleTrackClick={props.handleTrackClick}
-        currentSong={props.currentSong}
+        handleTrackControllerClick={props.handleTrackControllerClick}
+        currentTrack={props.currentTrack}
         isPlaying={props.isPlaying}
       />
     );

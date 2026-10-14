@@ -3,7 +3,7 @@ import { SpecialButton } from "../../UI/buttons/SpecialButton/SpecialButton";
 import { SearchBar } from "../../UI/search.bar/SearchBar";
 import logo from "../../logo.svg";
 import "./Header.css";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export const Header = () => {
   const navigate = useNavigate();
@@ -18,7 +18,7 @@ export const Header = () => {
       </div>
       <div className="header-actions">
         <SpecialButton
-          className="sort-button"
+          className="profile-button"
           onClick={() => navigate("/all-tracks")}
         >
           All tracks

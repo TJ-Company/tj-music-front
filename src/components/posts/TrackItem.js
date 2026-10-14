@@ -2,26 +2,26 @@ import {
   IconPlayerPauseFilled,
   IconPlayerPlayFilled,
 } from "@tabler/icons-react";
-import { PlayPauseButton } from "../../UI/buttons/PlayPauseButton/PlayPauseButton.js";
+import { PlayPauseButton } from "../../UI/buttons/PlayPauseButton/TrackButton.js";
 import "../../UI/buttons/PlayPauseButton/styles/TrackItemButton.css";
 import "./TrackItem.css";
+import { API_URL } from "../../constants/api.js";
 
 export const TrackItem = (props) => {
-  const { track, handleTrackClick, currentSong, isPlaying } = props;
+  const { track, handleTrackControllerClick, currentTrack, isPlaying } = props;
   const { id, title, author, coverUrl } = track || {};
   const normalizedCover = coverUrl?.replace(/\\/g, "/");
-  const API_URL = "http://localhost:8080";
 
   return (
     <div className="song-item">
       <PlayPauseButton
         className={`song-image-button ${
-          currentSong?.id === track.id ? "currentSong" : ""
+          currentTrack?.id === track.id ? "currentSong" : ""
         }`}
-        onClick={() => handleTrackClick(track)}
+        onClick={() => handleTrackControllerClick(track)}
         alt={title}
         icon={
-          currentSong && currentSong?.id === track.id && isPlaying ? (
+          currentTrack && currentTrack.id === track.id && isPlaying ? (
             <IconPlayerPauseFilled className="song-pause-icon" />
           ) : (
             <IconPlayerPlayFilled className="song-play-icon" />
